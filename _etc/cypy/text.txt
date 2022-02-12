@@ -1,0 +1,9 @@
+g++ hw.cpp
+./a.out
+g++ is the C++ compiler frontend to GCC.
+gcc is the C compiler frontend to GCC.
+
+clang bubble_sort.cpp
+
+clang program.c -o program
+clang bubble_sort.cpp -o bubble_sort
