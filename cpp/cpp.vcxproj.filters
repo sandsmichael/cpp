@@ -27,6 +27,12 @@
     <ClCompile Include="src\loop.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="round.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Round.h">
+      <Filter>Header Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\Log.h">

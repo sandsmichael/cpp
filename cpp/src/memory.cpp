@@ -12,7 +12,6 @@ int Memory() {
 	*ptr = 10;
 	std::cout << *ptr << std::endl;
 
-
 	std::cin.get();
 
 	return var;
