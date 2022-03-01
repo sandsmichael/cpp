@@ -1,9 +1,9 @@
-#include "stdio.h"
 #include "iostream"
 
 
 void InitLog()
 {
+	
 	Log("logging log logs");
 }
 

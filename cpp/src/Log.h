@@ -1,4 +1,4 @@
 #pragma once
 
-void Log(const char* message);
-void InitLog();
+//void Log(const char* message);
+//void InitLog();

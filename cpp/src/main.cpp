@@ -1,8 +1,8 @@
 #include "stdio.h"
-#include "iostream"
+//#include "iostream"
 //#include "Log.h"
-#include "Memory.h"
-#include "Round.h"
+//#include "Memory.h"
+//#include "Round.h"
 
 int main() {
 
@@ -12,12 +12,12 @@ int main() {
 	//InitLog();
 
 
-	int memptr = { Memory() };
+	//int memptr = { Memory() };
 
-	Remember(memptr);
+	//Remember(memptr);
 
-	float num2 = 2.465f;
-	float rounded_float{ _roundf(num2) };
+	//float num2 = 2.465f;
+	//float rounded_float{ _roundf(num2) };
 		
 }
 
