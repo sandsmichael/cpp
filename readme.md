@@ -43,3 +43,18 @@ https://github.com/open-source-parsers/jsoncpp
 python amalgamate.py
 
 https://subscription.packtpub.com/book/application_development/9781785286902/1/ch01lvl1sec12/reading-and-writing-json-in-c
+
+
+
+
+
+
+g++ hw.cpp
+./a.out
+g++ is the C++ compiler frontend to GCC.
+gcc is the C compiler frontend to GCC.
+
+clang bubble_sort.cpp
+
+clang program.c -o program
+clang bubble_sort.cpp -o bubble_sort
