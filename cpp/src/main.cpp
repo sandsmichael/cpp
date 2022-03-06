@@ -1,23 +1,26 @@
 #include "stdio.h"
-//#include "iostream"
-//#include "Log.h"
-//#include "Memory.h"
-//#include "Round.h"
+#include "iostream"
+#include "Log.h"
+#include "Memory.h"
+#include "Round.h"
 
 int main() {
 
 	std::cout << "hello world" << std::endl;
 
 
-	//InitLog();
+	// InitLog();
 
 
-	//int memptr = { Memory() };
+	// int memptr = { Memory() };
 
-	//Remember(memptr);
+	// Remember(memptr);
 
-	//float num2 = 2.465f;
-	//float rounded_float{ _roundf(num2) };
+
+	// std::cout <<	_roundf(1.234f)   << std::endl;
+
+	// float num2 = 2.465f;
+	// float rounded_float = { _roundf(num2) };
 		
 }
 
