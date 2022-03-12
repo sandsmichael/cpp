@@ -1,26 +1,15 @@
 #include "stdio.h"
 #include "iostream"
-#include "Log.h"
-#include "Memory.h"
-#include "Round.h"
+#include "core/json.h"
+#include "core/json.cpp"
 
 int main() {
 
-	std::cout << "hello world" << std::endl;
+	std::cout << "[Init] reading json file" << std::endl;
+
+	read();
 
 
-	// InitLog();
-
-
-	// int memptr = { Memory() };
-
-	// Remember(memptr);
-
-
-	// std::cout <<	_roundf(1.234f)   << std::endl;
-
-	// float num2 = 2.465f;
-	// float rounded_float = { _roundf(num2) };
 		
 }
 
