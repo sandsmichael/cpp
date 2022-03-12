@@ -1,4 +1,3 @@
-// #include <json/value.h>
 #include <iostream>
 #include <fstream>
 #include <string>
@@ -12,8 +11,8 @@ void read ()
 
     std::ifstream myfile; 
     
-    // myfile.open("C:/dev/cpp/cpp/io/premier_league_2021.json");
-    myfile.open("/Users/michaelsands/code/cpp/cpp/io/premier_league_2021.json");
+    myfile.open("C:/dev/cpp/cpp/io/premier_league_2021.json");
+    //myfile.open("/Users/michaelsands/code/cpp/cpp/io/premier_league_2021.json");
     
     std::string mystring;
 
