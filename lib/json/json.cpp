@@ -26,11 +26,9 @@ int main()
     // std::cout << file_contents << std::endl;
 
     json j_complete = json::parse(file_contents);
-    // std::cout << std::setw(10) << j_complete << std::endl;
-    std::cout << std::setw(10) << j_complete["rounds"]["matches"][0] << std::endl;
-
-
-
+    // std::cout << std::setw(10) << j_complete << std::endl;   // pretty print with setw()
+    std::string name = j_complete.value("name", "oops");
+    std::cout << name << std::endl;
 
 }
 
