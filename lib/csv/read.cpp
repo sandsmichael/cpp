@@ -34,6 +34,7 @@ int main()
     else
         cout << "Could not open the file\n";
 
+
     for (int i = 0; i < content.size(); i++)
     {
         for (int j = 0; j < content[i].size(); j++)
