@@ -69,10 +69,14 @@ int main()
     }
     
 
+    cout << "Payroll amount" << endl;
+    
     cout << to_string(payrollSum) << endl;
+
     cout << to_string(nTeams) << endl;
 
     avgPayroll = payrollSum / nTeams;
+
     cout << avgPayroll << endl;
 
 
