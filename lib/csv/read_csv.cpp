@@ -6,9 +6,28 @@
 
 using namespace std;
 
-int main()
-    {
+
+vector<vector<string>> read( string fp );
+
+void summary(vector<vector<string>> content);
+
+
+int main(){
+
     string fp = "C:\\dev\\cpp\\lib\\csv\\mlb_teams_2012.csv";
+
+    vector<vector<string>> content;
+    
+    content = read( fp );
+
+    summary( content );
+
+}
+
+
+vector<vector<string>> read( string fp )
+
+    {
 
     vector<vector<string>> content; // vector of string vectors
     vector<string> row;             // vector of strings
@@ -33,6 +52,7 @@ int main()
         cout << "Could not open the file\n";
 
     
+    // print to console
     for (int i =0; i < content.size(); i++) // rows of content
     {
 
@@ -44,10 +64,20 @@ int main()
 
     }
 
+    return content;
 
+}
+
+
+void summary(vector<vector<string>> content)
+{
+    
+    // calculate
     int avgPayroll = 0;
     int payrollSum = 0;
     int nTeams = 0;
+    vector<int> costPerWin;
+    int winSum = 0;
 
     for (int i =0; i < content.size(); i++)
     {
@@ -56,6 +86,14 @@ int main()
             if (i > 0 && j == 1)
             {
                 payrollSum = payrollSum + stof(content[i][j]);
+
+                costPerWin.push_back( stod(content[i][1]) / stod(content[i][2]) );
+            }
+
+            if (i > 0 && j == 2)
+            {
+                winSum = winSum + (stof(content[i][2]));
+
             }
             
         }
@@ -65,19 +103,31 @@ int main()
             nTeams = nTeams + 1;
         }
 
-
     }
-    
 
-    cout << "Payroll amount" << endl;
-    
+    cout << "-----------------------------" << endl;
+
+    cout << "Payroll Sum" << endl;
+
     cout << to_string(payrollSum) << endl;
 
+    cout << "Number of Teams" << endl;
+
     cout << to_string(nTeams) << endl;
+
+    cout << "Average Payroll" << endl;
 
     avgPayroll = payrollSum / nTeams;
 
     cout << avgPayroll << endl;
 
+    cout << "Payroll Per Win" << endl;
+
+    for (int i =0; i < costPerWin.size(); i++){
+        cout << costPerWin[i] << endl;
+    }
+
 
 }
+
+
