@@ -14,7 +14,7 @@ void summary(vector<vector<string>> content);
 
 int main(){
 
-    string fp = "C:\\dev\\cpp\\lib\\csv\\mlb_teams_2012.csv";
+    string fp = "C:\\dev\\cpp\\lib\\csv\\data\\mlb_teams_2012.csv";
 
     vector<vector<string>> content;
     
